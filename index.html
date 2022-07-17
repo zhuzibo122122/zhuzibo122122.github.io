@@ -2,476 +2,476 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <meta name="baidu-site-verification" content="L6Lm9d5Crl"/>
   
+  <title>Hexo | 小站首页 | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="/css/public.css" />
+  <link rel="stylesheet" href="/css/layout.css" />
+  <link rel="stylesheet" href="/css/iconfont.css" />
+  <link rel="stylesheet" href="/css/nprogress.css" />
+  <link rel="stylesheet" href="/css/APlayer.min.css" />
   
+  <link rel="shortcut icon" href="/imgs/shortcut-icon.ico" type="image/x-icon">
   
-  
-  <title>Hexo</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://example.com/index.html">
-<meta property="og:site_name" content="Hexo">
-<meta property="og:locale" content="en_US">
-<meta property="article:author" content="土豆炒肉丝">
-<meta name="twitter:card" content="summary">
-  
-    <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
-  
-  
-    <link rel="icon" href="/img/avatar.png">
-  
-  
-  
-<link rel="stylesheet" href="//cdn.bootcss.com/animate.css/3.5.0/animate.min.css">
+  <script src="/js/nprogress.js"></script>
 
-  
-  
-<link rel="stylesheet" href="/css/style.css">
-
-  <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css">
-  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-  
-    
-    
-  
-  
-      <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
-  
-  <!-- 加载特效 -->
-    <script src="/js/pace.js"></script>
-    <link href="/css/pace/pace-theme-flash.css" rel="stylesheet" />
+  <script src="/js/APlayer.min.js"></script>
+  <script src="/js/jquery.min.js"></script>
+  <script src="/js/jquery.pjax.min.js"></script>
+  <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
   <script>
-      var yiliaConfig = {
-          fancybox: true,
-          animate: true,
-          isHome: true,
-          isPost: false,
-          isArchive: false,
-          isTag: false,
-          isCategory: false,
-          open_in_new: false
-      }
+    document.title = `Hexo | 小站首页`
   </script>
 <meta name="generator" content="Hexo 6.2.0"></head>
+
+<style>
+  .load {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(37, 35, 40);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 9999;
+  }
+  .load-circle {
+    width: 80px;
+    height: 80px;
+    border: 8px solid orange;
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: rotate 1s linear infinite;
+    filter: drop-shadow(0 0 3px orange);
+  }
+  .load-circle-inner {
+    width: 40px;
+    height: 40px;
+    border: 8px solid orange;
+    border-top-color: transparent;
+    border-radius: 50%;
+    animation: rotate-reverse .5s linear infinite;
+  }
+  .load-text {
+    margin-top: 20px;
+    font-size: 24px;
+    color: orange;
+    display: flex;
+  }
+  .load-text span {
+    margin: 0 5px;
+    text-shadow: 5px 5px 5px orange;
+    animation: move 1s linear infinite;
+  }
+  .load-text span:nth-child(1) {
+    animation-delay: -0.6s;
+  }
+  .load-text span:nth-child(2) {
+    animation-delay: -0.5s;
+  }
+  .load-text span:nth-child(3) {
+    animation-delay: -0.4s;
+  }
+  .load-text span:nth-child(4) {
+    animation-delay: -0.3s;
+  }
+  .load-text span:nth-child(5) {
+    animation-delay: -0.2s;
+  }
+  .load-text span:nth-child(6) {
+    animation-delay: -0.1s;
+  }
+  @keyframes rotate {
+    0% { transform: rotate(0); }
+    100% { transform: rotate(360deg); }
+  }
+  @keyframes rotate-reverse {
+    0% { transform: rotate(0); }
+    100% { transform: rotate(-360deg); }
+  }
+  @keyframes move {
+    0% { transform: translateY(0%) rotate(0) scale(1); }
+    20% { transform: translateY(20%) rotate(10deg) scale(1.2); }
+    80% { transform: translateY(-10%) rotate(-20deg) scale(.8);}
+    100% { transform: translateY(0) rotate(0) scale(1); }
+  }
+</style>
 <body>
-  <div id="container">
-    <div class="left-col">
-    <div class="overlay"></div>
-<div class="intrude-less">
-    <header id="header" class="inner">
-        
-<script src="https://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
-
-        <a href="/" class="profilepic">
-            
-            <img lazy-src="/img/avatar.png" class="js-avatar">
-            
-        </a>
-        <hgroup>
-          <h1 class="header-author"><a href="/"></a></h1>
-        </hgroup>
-        
-        
-            <form>
-                <input type="text" class="st-default-search-input search" id="local-search-input" placeholder="搜索一下" autocomplete="off">
-            </form>
-            <div id="local-search-result"></div>
-        
-        
-            <script type="text/javascript">
-                (function() {
-                    'use strict';
-                    function getMatchData(keyword, data) {
-                        var matchData = [];
-                        for(var i =0;i<data.length;i++){
-                            if(data[i].title.toLowerCase().indexOf(keyword)>=0) 
-                                matchData.push(data[i])
-                        }
-                        return matchData;
-                    }
-                    var $input = $('#local-search-input');
-                    var $resultContent = $('#local-search-result');
-                    $input.keyup(function(){
-                        $.ajax({
-                            url: '/search.json',
-                            dataType: "json",
-                            success: function( json ) {
-                                var str='<ul class=\"search-result-list\">';                
-                                var keyword = $input.val().trim().toLowerCase();
-                                $resultContent.innerHTML = "";
-                                if ($input.val().trim().length <= 0) {
-                                    $resultContent.empty();
-                                    $('#switch-area').show();
-                                    return;
-                                }
-                                var results = getMatchData(keyword, json);
-                                if(results.length === 0){
-                                    $resultContent.empty();
-                                    $('#switch-area').show();
-                                    return;
-                                } 
-                                for(var i =0; i<results.length; i++){
-                                    str += "<li><a href='"+ results[i].url +"' class='search-result-title'>"+ results[i].title +"</a></li>";
-                                }
-                                str += "</ul>";
-                                $resultContent.empty();
-                                $resultContent.append(str);
-                                $('#switch-area').hide();
-                            }
-                        });
-                    });
-                })();
-            </script>
-        
-        
-            <div id="switch-btn" class="switch-btn">
-                <div class="icon">
-                    <div class="icon-ctn">
-                        <div class="icon-wrap icon-house" data-idx="0">
-                            <div class="birdhouse"></div>
-                            <div class="birdhouse_holes"></div>
-                        </div>
-                        <div class="icon-wrap icon-ribbon hide" data-idx="1">
-                            <div class="ribbon"></div>
-                        </div>
-                        
-                        <div class="icon-wrap icon-link hide" data-idx="2">
-                            <div class="loopback_l"></div>
-                            <div class="loopback_r"></div>
-                        </div>
-                        
-                        
-                        <div class="icon-wrap icon-me hide" data-idx="3">
-                            <div class="user"></div>
-                            <div class="shoulder"></div>
-                        </div>
-                        
-                    </div>
-                </div>
-                <div class="tips-box hide">
-                    <div class="tips-arrow"></div>
-                    <ul class="tips-inner">
-                        <li>菜单</li>
-                        <li>标签</li>
-                        
-                        <li>友情链接</li>
-                        
-                        
-                        <li>关于我</li>
-                        
-                    </ul>
-                </div>
-            </div>
-        
-        <div id="switch-area" class="switch-area">
-            <div class="switch-wrap">
-                <section class="switch-part switch-part1">
-                    <nav class="header-menu">
-                        <ul>
-                        
-                            <li><a  href="/archives/">所有文章</a></li>
-                        
-                            <li><a  href="/categories/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/">玩转开发工具</a></li>
-                        
-                            <li><a  href="/categories/digital">玩转数码</a></li>
-                        
-                            <li><a  href="/categories/algorithm">算法学习</a></li>
-                        
-                            <li><a  href="/about/">关于我</a></li>
-                        
-                        </ul>
-                    </nav>
-                    <nav class="header-nav">
-                        <ul class="social">
-                            
-                                <a class="fl github"  target="_blank" href="/xxxxx" title="github">github</a>
-                            
-                                <a class="fl weibo"  target="_blank" href="/xxxxxxxx" title="weibo">weibo</a>
-                            
-                                <a class="fl rss"  target="_blank" href="/atom.xml" title="rss">rss</a>
-                            
-                        </ul>
-                    </nav>
-                </section>
-                
-                <section class="switch-part switch-part2">
-                    <div class="widget tagcloud" id="js-tagcloud">
-                        
-                    </div>
-                </section>
-                
-                
-                <section class="switch-part switch-part3">
-                    <div id="js-friends">
-                    
-                      <a target="_blank"  class="main-nav-link switch-friends-link" href="http://blog.csdn.net/baidu_21483933">csdn</a>
-                    
-                      <a target="_blank"  class="main-nav-link switch-friends-link" href="https://segmentfault.com/blog/maocg_web">segmentfault</a>
-                    
-                      <a target="_blank"  class="main-nav-link switch-friends-link" href="http://www.jianshu.com/users/eb37ef89c746/latest_articles">简书</a>
-                    
-                    </div>
-                </section>
-                
-                
-                
-                <section class="switch-part switch-part4">
-                
-                    <div id="js-aboutme">爱动漫,爱游戏,爱编程,爱运动,爱的太多了!</div>
-                </section>
-                
-            </div>
-        </div>
-    </header>
-</div>
-
+  <div id="load" class="load">
+    <div class="load-circle">
+      <div class="load-circle-inner"></div>
     </div>
-    <div class="mid-col">
-      <nav id="mobile-nav">
-      <div class="overlay">
-          <div class="slider-trigger"></div>
-          <h1 class="header-author js-mobile-header hide"><a href="/" title="回到主页"></a></h1>
+    <p class="load-text">
+      <span>L</span>
+      <span>O</span>
+      <span>A</span>
+      <span>D</span>
+      <span>I</span>
+      <span>N</span>
+      <span>G</span>
+    </p>
+  </div>
+  <div id="container" class="container w-100 vh-100" style="display: none;">
+    <header class="header">
+  <div class="header-wrapper">
+    <div class="header-left">
+      <div class="header-search">
+        <input id="search-input" type="text" class="header-search--input" placeholder="请输入要检索的文章标题" />
+        <span id="search-btn" class="header-search--icon"><i class="iconfont icon-sousuo"></i></span>
       </div>
-    <div class="intrude-less">
-        <header id="header" class="inner">
-            <a href="/" class="profilepic">
-                
-                    <img lazy-src="/img/avatar.png" class="js-avatar">
-                
-            </a>
-            <hgroup>
-              <h1 class="header-author"><a href="/" title="回到主页"></a></h1>
-            </hgroup>
-            
-            <nav class="header-menu">
-                <ul>
-                
-                    <li><a href="/archives/">所有文章</a></li>
-                
-                    <li><a href="/categories/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/">玩转开发工具</a></li>
-                
-                    <li><a href="/categories/digital">玩转数码</a></li>
-                
-                    <li><a href="/categories/algorithm">算法学习</a></li>
-                
-                    <li><a href="/about/">关于我</a></li>
-                
-                <div class="clearfix"></div>
-                </ul>
-            </nav>
-            <nav class="header-nav">
-                <div class="social">
-                    
-                        <a class="github" target="_blank" href="/xxxxx" title="github">github</a>
-                    
-                        <a class="weibo" target="_blank" href="/xxxxxxxx" title="weibo">weibo</a>
-                    
-                        <a class="rss" target="_blank" href="/atom.xml" title="rss">rss</a>
-                    
-                </div>
-            </nav>
-        </header>
+      <div id="search-layer" class="header-search--layer hidden">
+        <p class="title">
+          <span>以下是搜索内容：</span>
+          <span id="close-layer-btn">关闭</span>
+        </p>
+        <ul>
+        </ul>
+      </div>
     </div>
-</nav>
-      <div class="body-wrap">
-  
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a  href="/2022/07/17/hello-world/" class="article-date">
-      <time datetime="2022-07-17T01:11:08.998Z" itemprop="datePublished">2022-07-17</time>
-</a>
-
+    <div class="header-right">
+      <ul class="header-menu">
+        <li>
+          <a href="/">
+            <i class="header-menu--icon iconfont icon-shouye"></i>
+            <span class="header-menu--span">首页</span>
+          </a>
+        </li>
+        <li>
+          <a href="/log">
+            <i class="header-menu--icon iconfont icon-rizhi"></i>
+            <span class="header-menu--span">日志</span>
+          </a>
+        </li>
+        <li>
+          <a href="/link">
+            <i class="header-menu--icon iconfont icon-youqinglianjie"></i>
+            <span class="header-menu--span">友情链接</span>
+          </a>
+        </li>
+        <li>
+          <a href="/about">
+            <i class="header-menu--icon iconfont icon-guanyuwomen"></i>
+            <span class="header-menu--span">关于我</span>
+          </a>
+        </li>
+      </ul>
     </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a  class="article-title" href="/2022/07/17/hello-world/">Hello World</a>
-    </h1>
-  
-
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-          
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<p>##这是我的博客</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-
-      
-      
-      <div class="clearfix"></div>
-    </div>
-    
   </div>
-  
-</article>
+</header>
 
-
-
-
-
-
-
-
-
-
-
-  
-  
-
-</div>
-      <footer id="footer">
-    <div class="outer">
-        <div id="footer-info">
-            <div class="footer-left">
-                &copy; 2022 土豆炒肉丝
-            </div>
-            <div class="footer-right">
-                <a href="http://hexo.io/" target="_blank">Hexo &nbsp;&nbsp;</a><a href="https://github.com/maochunguang" target="_blank">Blog</a> by tommy
-            </div>
-        </div>
-        
-            <div class="visit">
-                
-                    <span id="busuanzi_container_site_pv" style='display:none'>
-                        <span id="site-visit" >极客到访数: 
-                            <span id="busuanzi_value_site_uv"></span>
-                        </span>
-                    </span>
-                
-                
-                    <span>, </span>
-                
-                
-                    <span id="busuanzi_container_page_pv" style='display:none'>
-                        <span id="page-visit">本页阅读量: 
-                            <span id="busuanzi_value_page_pv"></span>
-                        </span>
-                    </span>
-                
-            </div>
-        
-    </div>
-</footer>
-
-    </div>
-    
-<script src="https://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
-
-
-<script src="/js/main.js"></script>
-
-
-    <script>
-        $(document).ready(function() {
-            var backgroundnum = 1;
-            var backgroundimg = "url(/background/bg-x.jpg)".replace(/x/gi, Math.ceil(Math.random() * backgroundnum));
-            $("#mobile-nav").css({"background-image": backgroundimg,"background-size": "cover","background-position": "center"});
-            $(".left-col").css({"background-image": backgroundimg,"background-size": "cover","background-position": "center"});
-        })
-    </script>
-
-
-<!-- Google Analytics -->
-<script type="text/javascript">
-(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-ga('create', 'xxxxx', 'auto');
-ga('send', 'pageview');
-
-</script>
-<!-- End Google Analytics -->
-
-
-
-	<script>
-	var _hmt = _hmt || [];
-	(function() {
-	  var hm = document.createElement("script");
-	  hm.src = "//hm.baidu.com/hm.js?xxxxxx";
-	  var s = document.getElementsByTagName("script")[0]; 
-	  s.parentNode.insertBefore(hm, s);
-	})();
-	</script>
-
-
-
-<div class="scroll" id="scroll">
-    <a href="#"><i class="fa fa-arrow-up"></i></a>
-    <a href="#comments"><i class="fa fa-comments-o"></i></a>
-    <a href="#footer"><i class="fa fa-arrow-down"></i></a>
-</div>
 <script>
-    $(document).ready(function() {
-        if ($("#comments").length < 1) {
-            $("#scroll > a:nth-child(2)").hide();
-        };
+  const ipt = document.querySelector('#search-input')
+  const btn = document.querySelector('#search-btn')
+  const layer = document.querySelector('#search-layer')
+  const posts = JSON.parse(`[{"title":"Hello World","path":"2022/07/17/hello-world/"}]`)
+  ipt.addEventListener('keyup', e => {
+    if (e.key === 'Enter') {
+      handleSearch()
+    }
+  })
+  btn.addEventListener('click', () => {
+    handleSearch()
+  })
+
+  document.querySelector('#close-layer-btn').addEventListener('click', () => {
+    layer.classList.toggle('hidden')
+  })
+
+  function handleSearch() {
+    if (ipt.value.trim() === '') {
+      return
+    }
+    let html = ''
+    const targetPosts = posts.filter(post => post.title.includes(ipt.value))
+    targetPosts.forEach(post => {
+      html += `
+        <li>
+          <div>
+            <a href="/${post.path}">${post.title.replace(new RegExp(ipt.value), `<span>${ipt.value}</span>`)}</a>
+          </div>
+          <img src="${post.cover || '/imgs/default-cover.webp' }" />
+        </li>
+      `
     })
-</script>
-
-<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
-</script>
-
-  <script language="javascript">
-    $(function() {
-        $("a[title]").each(function() {
-            var a = $(this);
-            var title = a.attr('title');
-            if (title == undefined || title == "") return;
-            a.data('title', title).removeAttr('title').hover(
-            function() {
-                var offset = a.offset();
-                $("<div id=\"anchortitlecontainer\"></div>").appendTo($("body")).html(title).css({
-                    top: offset.top - a.outerHeight() - 15,
-                    left: offset.left + a.outerWidth()/2 + 1
-                }).fadeIn(function() {
-                    var pop = $(this);
-                    setTimeout(function() {
-                        pop.remove();
-                    }, pop.text().length * 800);
-                });
-            }, function() {
-                $("#anchortitlecontainer").remove();
-            });
-        });
-    });
-</script>
-
-
+    if (html.trim () === '') {
+      html += '<p class="empty">没有搜索到内容</p>'
+    }
+    layer.querySelector('ul').innerHTML = html
+    layer.classList.remove('hidden')
+  }
+</script> 
+    <section id="main" class="main">
+      <div class="main-left-wrapper">
+<div class="main-left">
+  <div class="main-left--block">
+    <div class="main-left--info">
+      <img src="/imgs/avatar.jpg"" class="main-left--avatar" />
+      <div class="main-left--intro">
+        <p class="main-left--name">Cola.</p>
+        <div class="main-left--tags">
+          <span class="main-left--tag">中二</span>
+          <span class="main-left--tag">宅</span>
+        </div>
+      </div>
+    </div>
+  
+    <div>
+      <div class="main-left--motto">
+        <p>“花有重开日，人无再少年”</p>
+        <p>“一个简单普通的男孩”</p>
+      </div>
+      <div class="main-left--github">
+        <span class="line"></span>
+        <a target="_blank" rel="noopener" href="https://github.com/Aizener"><i class="logo iconfont icon-github-fill"></i></a>
+        <span class="line"></span>
+      </div>
+      <div class="main-left--statics">
+        <a href="/categories">
+          <div>
+            <span>0</span>
+            <span>分类</span>
+          </div>
+        </a>
+        <a href="/tags">
+          <div>
+            <span>0</span>
+            <span>标签</span>
+          </div>
+        </a>
+        <a href="/archives">
+          <div>
+            <span>1 </span>
+            <span>归档</span>
+          </div>
+        </a>
+      </div>
+    </div>
   </div>
+
+  <div class="main-left--block">
+    <ul class="main-left--menu">
+      
+        <li>
+          <a href="/">
+            <span class="header-menu--span">小站首页</span>
+            <i class="header-menu--icon iconfont icon-shouye"></i>
+          </a>
+        </li>
+      
+        <li>
+          <a href="/log">
+            <span class="header-menu--span">个人日志</span>
+            <i class="header-menu--icon iconfont icon-rizhi"></i>
+          </a>
+        </li>
+      
+        <li>
+          <a href="/link">
+            <span class="header-menu--span">友情链接</span>
+            <i class="header-menu--icon iconfont icon-youqinglianjie"></i>
+          </a>
+        </li>
+      
+        <li>
+          <a href="/about">
+            <span class="header-menu--span">关于自己</span>
+            <i class="header-menu--icon iconfont icon-guanyuwomen"></i>
+          </a>
+        </li>
+      
+        <li>
+          <a href="/tools">
+            <span class="header-menu--span">我的工具</span>
+            <i class="header-menu--icon iconfont icon-gongju"></i>
+          </a>
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="main-left--block">
+    <div class="main-left--site">
+      <h5 class="main-left--title">
+        <span>站点信息</span>
+        <i class="iconfont icon-zhandian"></i>
+      </h5>
+      <p class="main-left--subtitle">
+        <span>文章数目：</span>
+        <span>1 篇</span>
+      </p>
+      <p class="main-left--subtitle">
+        <span>最近动态：</span>
+        <span>今天</span>
+      </p>
+      <p class="main-left--subtitle">
+        <span>上线时间：</span>
+        <span>152天</span>
+      </p>
+      <p class="main-left--subtitle">
+        <span>当前版本：</span>
+        <span>v1.0.0</span>
+      </p>
+    </div>
+  </div>
+</div></div>
+      <div id="main-container" class="main-container">
+
+<div class="index">
+  <div class="index-left">
+    
+      <div class="index-article">
+        <img class="index-article--cover" src="/imgs/default-cover.webp" alt="">
+        <div class="index-article--content">
+          <a href="/2022/07/17/hello-world/">Hello World </a>
+          <div>
+            <p>
+              
+            </p>
+            <p>
+              
+            </p>
+          </div>
+          <div class="bg"></div>
+        </div>
+      </div>
+    
+  </div>
+  <div class="index-center">
+    
+  </div>
+  <div class="index-right">
+    <div class="index-right-wrapper">
+      
+      
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/07/">2022年07月</a><span class="archive-list-count">1</span></li></ul>
+    </div>
+  </div>
+</div>
+ </div>
+      <div class="main-right-wrapper"><div class="main-right">
+  <div class="main-right--board">
+    <div class="main-right--title">
+      <h5>公告栏</h5>
+      <i class="iconfont icon-gonggao"></i>
+    </div>
+    <div class="main-right--content">
+      Hello~大噶好。唔系可乐爱宅着，欢迎你们来到我的博客小站，希望能在这里收获到有用的东西哦！ 
+    </div>
+  </div>
+
+  <div id="aplayer" class="main-right--music"></div>
+
+  <div class="operate-items">
+    <div class="operate-item backtop">
+      <i class="iconfont icon-huidaodingbu"></i>
+      <span>回到顶部</span>
+    </div>
+    
+    <div class="operate-item turn-comment hidden">
+      <i class="iconfont icon-pinglun"></i>
+      <span>查看评论</span>
+    </div>
+    
+  </div>
+
+  <div class="main-right--site">
+    <div class="main-right--power">
+      <p>Power By <a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/">Hexo</a>.</p>
+      <p>Theme：<a target="_blank" rel="noopener" href="https://github.com/Aizener/hexo-theme-cola">Cola.</a></p>
+    </div>
+    <p class="main-right--refer">蜀ICP备2022005384号 </p>
+  </div>
+</div>
+
+<script>
+  function setOperateItem () {
+    const reg = /\d{4}\/\d{2}\/\d{2}\/.+/
+    const path = location.pathname
+    const commentDom = document.querySelector('.turn-comment')
+    if (commentDom) {
+      if (reg.test(path)) {
+        commentDom.classList.remove('hidden')
+      } else {
+        commentDom.classList.add('hidden')
+      }
+    }
+  }
+
+  setOperateItem()
+  const musics = JSON.parse(`[{"name":"安河桥","artist":"宋冬野","url":"http://ting6.yymp3.net:82/new25/songdongye/11.mp3","cover":"https://img2.baidu.com/it/u=1260056724,1076343118&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=500"},{"name":"卡布达","artist":"暂无","url":"/music/kabuda.mp3","cover":"https://img2.baidu.com/it/u=705831265,2862720033&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=500"},{"name":"八连杀","artist":"苏三","url":"/music/八连杀.mp3","cover":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQo0SWQx6YrNA8lElaG4OOKLkNkNzLO1PflKg&usqp=CAU"}]`)
+  const ap = new APlayer({
+    container: document.querySelector('#aplayer'),
+    audio: musics,
+  })
+
+  $(document).on('pjax:complete', function() {
+    setOperateItem()
+  })
+
+  document.querySelector('.backtop').addEventListener('click', () => {
+    document.documentElement.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    })
+  })
+  const dom = document.querySelector('.turn-comment')
+  dom && dom.addEventListener('click', () => {
+    const commentDom = document.querySelector('.comments-intro')
+    if (!commentDom) return
+    const top = commentDom.offsetTop, height = commentDom.offsetHeight
+    document.documentElement.scrollTo({
+      top: top - 2 * height,
+      behavior: 'smooth'
+    })
+  })
+</script></div>
+    </section>
+  </div>
+
+  <script>
+    function initScroll () {
+      const doc = document.documentElement
+      const pageHeight = doc.offsetHeight
+      const clientHeight = doc.clientHeight
+      NProgress.configure({
+        parent: 'body',
+        showSpinner: false,
+        minimum: 0,
+      })
+      document.addEventListener('scroll', () => {
+        const scrollTop = doc.scrollTop
+        let ratio = scrollTop / (pageHeight - clientHeight)
+        ratio = ratio > .99 ? .99999 : ratio
+        NProgress.set(ratio)
+      })
+    }
+
+
+    window.onload = function () {
+      setTimeout(() => {
+        $('#load').slideUp()
+        $('#container').slideToggle()
+        setTimeout(() => {
+          initScroll()
+          if (['/', '/log/', '/link/', '/about/', '/tools/'].includes(location.pathname) && window.innerWidth > 1200) {
+            init('container') // 水波纹动画
+          }
+        }, 500)
+      }, 500)
+    }
+    
+    // 对所有链接跳转事件绑定pjax容器container
+    $(document).pjax('a[target!=_blank]', '#main-container', {fragment:'#main-container', timeout:8000})
+    $(document).on('pjax:complete', function() {
+      initScroll()
+    })
+  </script>
+  
+  <script src="/js/water.js"></script>
+  
 </body>
 </html>
